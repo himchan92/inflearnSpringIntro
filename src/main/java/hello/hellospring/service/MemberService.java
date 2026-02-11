@@ -2,9 +2,12 @@ package hello.hellospring.service;
 
 import hello.hellospring.domain.Member;
 import hello.hellospring.repository.MemberRepository;
+import org.springframework.stereotype.Service;
+
 import java.util.List;
 import java.util.Optional;
 
+@Service //빈등록하여 서비스를 컨테이너에 인식하여 자동매핑되게 설정
 public class MemberService {
 
     private final MemberRepository memberRepository;
